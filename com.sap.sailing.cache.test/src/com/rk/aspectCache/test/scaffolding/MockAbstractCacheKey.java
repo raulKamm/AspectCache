@@ -1,7 +1,7 @@
-package com.sap.sailing.cache.test.scaffolding;
+package com.rk.aspectCache.test.scaffolding;
 
-import com.sap.sailing.cache.common.AbstractCacheKey;
-import com.sap.sailing.cache.common.CachedMethodSignature;
+import com.rk.aspectCache.common.AbstractCacheKey;
+import com.rk.aspectCache.common.CachedMethodSignature;
 
 public class MockAbstractCacheKey extends AbstractCacheKey {
 

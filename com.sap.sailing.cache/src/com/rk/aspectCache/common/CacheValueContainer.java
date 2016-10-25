@@ -1,13 +1,13 @@
-package com.sap.sailing.cache.common;
+package com.rk.aspectCache.common;
 
-import com.sap.sailing.cache.aop.Collection_Monitor;
-import com.sap.sailing.cache.impl.CacheFetch;
+import com.rk.aspectCache.aop.Collection_Monitor;
+import com.rk.aspectCache.impl.CacheFetch;
 
 /**
  * Wrapper for cache elements: provides the additional behavior, namely the freshness status
  * of the value. Also it is in charge of handling concurrent access to the wrapped object.
  * 
- * @author Raul Bertone (D059912)
+ * @author Raul Bertone (raul.bertone@emptyingthebuffer.com)
  *
  */
 

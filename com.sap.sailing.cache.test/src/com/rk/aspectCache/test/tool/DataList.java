@@ -1,8 +1,8 @@
-package com.sap.sailing.cache.test.tool;
+package com.rk.aspectCache.test.tool;
 
 import java.util.LinkedList;
 
-import com.sap.sailing.cache.common.MonitoredCollection;
+import com.rk.aspectCache.common.MonitoredCollection;
 
 public class DataList extends LinkedList<Data> implements DataCollection, MonitoredCollection{
 

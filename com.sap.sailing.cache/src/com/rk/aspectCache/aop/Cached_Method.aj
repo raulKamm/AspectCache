@@ -1,4 +1,4 @@
-package com.sap.sailing.cache.aop;
+package com.rk.aspectCache.aop;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -8,24 +8,24 @@ import java.lang.management.ManagementFactory;
 import org.aspectj.lang.annotation.SuppressAjWarnings;
 import org.aspectj.lang.reflect.MethodSignature;
 
-import com.sap.sailing.cache.common.Cache;
-import com.sap.sailing.cache.common.CacheKey;
-import com.sap.sailing.cache.common.Cached;
-import com.sap.sailing.cache.common.CachedMethodSignature;
-import com.sap.sailing.cache.common.DependencyThreadLocal;
-import com.sap.sailing.cache.common.MonitoringParameters;
-import com.sap.sailing.cache.impl.CacheFetch;
-import com.sap.sailing.cache.impl.CacheImpl;
-import com.sap.sailing.cache.impl.ImmutableCacheKey;
-import com.sap.sailing.cache.impl.MutableCacheKey;
-import com.sap.sailing.cache.impl.IdentityCacheKey;
+import com.rk.aspectCache.common.Cache;
+import com.rk.aspectCache.common.CacheKey;
+import com.rk.aspectCache.common.Cached;
+import com.rk.aspectCache.common.CachedMethodSignature;
+import com.rk.aspectCache.common.DependencyThreadLocal;
+import com.rk.aspectCache.common.MonitoringParameters;
+import com.rk.aspectCache.impl.CacheFetch;
+import com.rk.aspectCache.impl.CacheImpl;
+import com.rk.aspectCache.impl.IdentityCacheKey;
+import com.rk.aspectCache.impl.ImmutableCacheKey;
+import com.rk.aspectCache.impl.MutableCacheKey;
 
 /**
  * This aspect intercepts invocations to methods decorated with @Cached annotation. <br>
  * The invocation instance parameters and the method signature are used to build a {@link CacheKey} and a cache look-up is made: on a hit the value is simply returned
  * to the caller; on a miss the @Cached method is invoked and its output cached and returned to the caller.
  * 
- * @author Raul Bertone (D059912)
+ * @author Raul Bertone (raul.bertone@emptyingthebuffer.com)
  */
 @SuppressAjWarnings
 public aspect Cached_Method{

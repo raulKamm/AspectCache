@@ -1,4 +1,4 @@
-package com.sap.sailing.cache.common;
+package com.rk.aspectCache.common;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -11,7 +11,7 @@ import java.lang.annotation.RetentionPolicy;
  * The elements' default values need not stay the same across all the overriding versions, therefore you can enforce different caching behaviors
  * for the same method by calling it from subtypes of the original version.
  * 
- * @author Raul Bertone (D059912)
+ * @author Raul Bertone (raul.bertone@emptyingthebuffer.com)
  */
 
 @Retention(RetentionPolicy.RUNTIME)

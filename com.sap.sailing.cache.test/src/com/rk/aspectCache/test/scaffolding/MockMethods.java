@@ -1,6 +1,6 @@
-package com.sap.sailing.cache.test.scaffolding;
+package com.rk.aspectCache.test.scaffolding;
 
-import com.sap.sailing.cache.common.Cached;
+import com.rk.aspectCache.common.Cached;
 
 public class MockMethods {
 	

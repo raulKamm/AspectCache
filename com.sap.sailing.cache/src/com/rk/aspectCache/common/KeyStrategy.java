@@ -1,9 +1,9 @@
-package com.sap.sailing.cache.common;
+package com.rk.aspectCache.common;
 
 /**
  * Indicates which type of key should be used
  * 
- * @author Raul Bertone (D059912)
+ * @author Raul Bertone (raul.bertone@emptyingthebuffer.com)
  */
 
 public enum KeyStrategy {

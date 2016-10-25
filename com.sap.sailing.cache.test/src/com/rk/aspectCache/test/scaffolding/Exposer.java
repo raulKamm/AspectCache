@@ -1,8 +1,8 @@
-package com.sap.sailing.cache.test.scaffolding;
+package com.rk.aspectCache.test.scaffolding;
 
 import org.aspectj.lang.reflect.MethodSignature;
 
-import com.sap.sailing.cache.aop.Collection_Monitor;
+import com.rk.aspectCache.aop.Collection_Monitor;
 
 
 /**
@@ -11,7 +11,7 @@ import com.sap.sailing.cache.aop.Collection_Monitor;
  * 
  * This class also provides access to other AspectJ runtime objects that are "difficult to reach": for example the Signature of a JoinPoint.
  * 
- * @author Raul Bertone (D059912)
+ * @author Raul Bertone (raul.bertone@emptyingthebuffer.com)
  */
 public class Exposer {
 

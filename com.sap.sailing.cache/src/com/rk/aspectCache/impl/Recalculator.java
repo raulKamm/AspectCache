@@ -1,4 +1,4 @@
-package com.sap.sailing.cache.impl;
+package com.rk.aspectCache.impl;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,7 +7,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-import com.sap.sailing.cache.common.CacheKey;
+import com.rk.aspectCache.common.CacheKey;
 
 /**
  * To avoid queuing more than one instance of the same cache entry recalculation, this implementation of ThreadPoolExecutor relies on a directly managed task queue. <br>
@@ -16,7 +16,7 @@ import com.sap.sailing.cache.common.CacheKey;
  * addTask() can "kickstart" the Executor's threads submitting tasks as long as there are available "slots" (idle threads). Afterwards, when a task is completed,
  * the Recalculator will try to fetch more tasks from the queue: if the queue is empty the thread will idle again, until the next "kick" by addTask().
  * 
- * @author Raul Bertone (D059912)
+ * @author Raul Bertone (raul.bertone@emptyingthebuffer.com)
  */
 public class Recalculator extends ThreadPoolExecutor {
 

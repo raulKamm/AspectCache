@@ -1,4 +1,4 @@
-package com.sap.sailing.cache.test.tool;
+package com.rk.aspectCache.test.tool;
 
 public enum Methods {
 	M_0000, // default options

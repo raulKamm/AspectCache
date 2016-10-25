@@ -1,6 +1,6 @@
-package com.sap.sailing.cache.impl;
+package com.rk.aspectCache.impl;
 
-import com.sap.sailing.cache.common.MonitoringParameters;
+import com.rk.aspectCache.common.MonitoringParameters;
 
 public class CacheMonitor implements CacheMonitorMBean {
 

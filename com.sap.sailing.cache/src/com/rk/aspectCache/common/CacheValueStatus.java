@@ -1,4 +1,4 @@
-package com.sap.sailing.cache.common;
+package com.rk.aspectCache.common;
 
 public enum CacheValueStatus {
 	

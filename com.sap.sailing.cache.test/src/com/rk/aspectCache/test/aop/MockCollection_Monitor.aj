@@ -1,9 +1,9 @@
-package com.sap.sailing.cache.test.aop;
+package com.rk.aspectCache.test.aop;
 
-import com.sap.sailing.cache.aop.Collection_Monitor;
-import com.sap.sailing.cache.common.CacheKey;
-import com.sap.sailing.cache.common.MonitoredCollection;
-import com.sap.sailing.cache.test.scaffolding.Exposer;
+import com.rk.aspectCache.aop.Collection_Monitor;
+import com.rk.aspectCache.common.CacheKey;
+import com.rk.aspectCache.common.MonitoredCollection;
+import com.rk.aspectCache.test.scaffolding.Exposer;
 
 @TestAspect // to give its advice precedence over other aspect
 public aspect MockCollection_Monitor extends Collection_Monitor {

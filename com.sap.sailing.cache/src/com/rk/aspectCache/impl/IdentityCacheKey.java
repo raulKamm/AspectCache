@@ -1,19 +1,19 @@
-package com.sap.sailing.cache.impl;
+package com.rk.aspectCache.impl;
 
 import java.lang.ref.WeakReference;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.Vector;
 
-import com.sap.sailing.cache.common.AbstractCacheKey;
-import com.sap.sailing.cache.common.CachedMethodSignature;
+import com.rk.aspectCache.common.AbstractCacheKey;
+import com.rk.aspectCache.common.CachedMethodSignature;
 
 /**
  * This CacheKey is built using the identity of the reference arguments of a cached method invocation. <br>
  * More specifically, for types passed by value - i.e. primitive types - their value is used, while for types passed by reference
  * their identity is used instead. An exception is made for String, which being immutable for this purpose can be treated as a primitive type.
  * 
- * @author Raul Bertone (D059912)
+ * @author Raul Bertone (raul.bertone@emptyingthebuffer.com)
  */
 
 public class IdentityCacheKey extends AbstractCacheKey {

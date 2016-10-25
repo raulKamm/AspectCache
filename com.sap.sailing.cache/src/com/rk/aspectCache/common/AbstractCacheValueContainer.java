@@ -1,8 +1,8 @@
-package com.sap.sailing.cache.common;
+package com.rk.aspectCache.common;
 
 import java.util.HashSet;
 
-import com.sap.sailing.cache.aop.Collection_Monitor;
+import com.rk.aspectCache.aop.Collection_Monitor;
 
 public abstract class AbstractCacheValueContainer implements CacheValueContainer {
 

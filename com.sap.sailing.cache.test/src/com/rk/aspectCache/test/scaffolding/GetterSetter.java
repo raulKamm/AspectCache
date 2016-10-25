@@ -1,4 +1,4 @@
-package com.sap.sailing.cache.test.scaffolding;
+package com.rk.aspectCache.test.scaffolding;
 
 public class GetterSetter {
 

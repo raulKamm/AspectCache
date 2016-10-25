@@ -1,10 +1,10 @@
-package com.sap.sailing.cache.test.scaffolding;
+package com.rk.aspectCache.test.scaffolding;
 
-import com.sap.sailing.cache.aop.Collection_Monitor;
-import com.sap.sailing.cache.common.AbstractCacheValueContainer;
-import com.sap.sailing.cache.common.CacheKey;
-import com.sap.sailing.cache.common.FieldID;
-import com.sap.sailing.cache.impl.CacheFetch;
+import com.rk.aspectCache.aop.Collection_Monitor;
+import com.rk.aspectCache.common.AbstractCacheValueContainer;
+import com.rk.aspectCache.common.CacheKey;
+import com.rk.aspectCache.common.FieldID;
+import com.rk.aspectCache.impl.CacheFetch;
 
 public class MockAbstractCacheValueContainer extends AbstractCacheValueContainer {
 

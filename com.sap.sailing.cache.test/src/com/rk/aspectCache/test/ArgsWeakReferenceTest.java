@@ -1,16 +1,16 @@
-package com.sap.sailing.cache.test;
+package com.rk.aspectCache.test;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import com.sap.sailing.cache.common.CachedMethodSignature;
-import com.sap.sailing.cache.impl.ArgsWeakReference;
-import com.sap.sailing.cache.impl.CacheImpl;
-import com.sap.sailing.cache.impl.IdentityCacheKey;
-import com.sap.sailing.cache.test.scaffolding.Exposer;
-import com.sap.sailing.cache.test.scaffolding.MockMethods;
+import com.rk.aspectCache.common.CachedMethodSignature;
+import com.rk.aspectCache.impl.ArgsWeakReference;
+import com.rk.aspectCache.impl.CacheImpl;
+import com.rk.aspectCache.impl.IdentityCacheKey;
+import com.rk.aspectCache.test.scaffolding.Exposer;
+import com.rk.aspectCache.test.scaffolding.MockMethods;
 
 public class ArgsWeakReferenceTest {
 

@@ -1,4 +1,4 @@
-package com.sap.sailing.cache.common;
+package com.rk.aspectCache.common;
 
 import java.util.Arrays;
 
@@ -8,7 +8,7 @@ import org.aspectj.lang.reflect.MethodSignature;
  * Identifies a @Cached method's signature. It is used in place of the MethodSignature type from the AspectJ Runtime API to have complete control on <br>
  * the implementation of hashCode() and equals(), which is necessary since this is used in building a CacheKey.
  * 
- * @author Raul Bertone (D059912)
+ * @author Raul Bertone (raul.bertone@emptyingthebuffer.com)
  */
 
 /*

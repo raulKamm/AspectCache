@@ -1,9 +1,9 @@
-package com.sap.sailing.cache.test.tool;
+package com.rk.aspectCache.test.tool;
 
 import java.lang.management.ManagementFactory;
 import java.util.Random;
 
-import com.sap.sailing.cache.common.IgnoreField;
+import com.rk.aspectCache.common.IgnoreField;
 
 public class Caller implements Runnable {
 	

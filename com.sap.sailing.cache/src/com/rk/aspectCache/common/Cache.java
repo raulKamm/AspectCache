@@ -1,19 +1,19 @@
-package com.sap.sailing.cache.common;
+package com.rk.aspectCache.common;
 
 import java.lang.ref.ReferenceQueue;
 import java.lang.reflect.Method;
 import java.util.HashSet;
 
-import com.sap.sailing.cache.aop.Collection_Monitor;
-import com.sap.sailing.cache.common.CacheKey;
-import com.sap.sailing.cache.impl.CacheFetch;
+import com.rk.aspectCache.aop.Collection_Monitor;
+import com.rk.aspectCache.common.CacheKey;
+import com.rk.aspectCache.impl.CacheFetch;
 
 /**
  * The centerpiece of the caching framework. Manages the actual cache data structure. Called by Cached_Methods to request/provide a cache value - identified
  * by a {@link CacheKey}. Monitored fields register here their dependencies, again providing a {@link CacheKey} and when they are eventually modified they
  * invoke the invalidation of the dependent cache elements and the removal of the previously registered dependencies.
  * 
- * @author Raul Bertone (D059912)
+ * @author Raul Bertone (raul.bertone@emptyingthebuffer.com)
  */
 
 public interface Cache {

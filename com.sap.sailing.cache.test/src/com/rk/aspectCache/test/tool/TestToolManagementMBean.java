@@ -1,4 +1,4 @@
-package com.sap.sailing.cache.test.tool;
+package com.rk.aspectCache.test.tool;
 
 /**
  * MBean interface for the runtime management of the TestTool

@@ -1,15 +1,15 @@
-package com.sap.sailing.cache.impl;
+package com.rk.aspectCache.impl;
 
 import java.lang.ref.ReferenceQueue;
 import java.lang.ref.WeakReference;
 
-import com.sap.sailing.cache.common.CacheKey;
+import com.rk.aspectCache.common.CacheKey;
 
 /**
  * A WeakReference where is possible to specify an owning CacheKey. <br>
  * When it will be found in a ReferenceQueue, it will be possible to identify the owner.
  * 
- * @author Raul Bertone (D059912)
+ * @author Raul Bertone (raul.bertone@emptyingthebuffer.com)
  * @param <T>
  */
 

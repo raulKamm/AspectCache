@@ -1,9 +1,9 @@
-package com.sap.sailing.cache.common;
+package com.rk.aspectCache.common;
 
 /**
  * Marker interface: enables AspectJ monitoring on the implementing type.
  * 
- * @author Raul Bertone (D059912)
+ * @author Raul Bertone (raul.bertone@emptyingthebuffer.com)
  */
 
 public interface MonitoredCollection {

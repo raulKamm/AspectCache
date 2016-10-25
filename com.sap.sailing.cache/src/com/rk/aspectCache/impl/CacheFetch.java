@@ -1,9 +1,9 @@
-package com.sap.sailing.cache.impl;
+package com.rk.aspectCache.impl;
 
 /**
  * Wraps the result of a cache lookup.
  * 
- * @author Raul Bertone (D059912)
+ * @author Raul Bertone (raul.bertone@emptyingthebuffer.com)
  */
 
 public class CacheFetch {

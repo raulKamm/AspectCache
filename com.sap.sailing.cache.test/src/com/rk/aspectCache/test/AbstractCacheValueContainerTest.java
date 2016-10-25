@@ -1,4 +1,4 @@
-package com.sap.sailing.cache.test;
+package com.rk.aspectCache.test;
 
 import static org.junit.Assert.*;
 
@@ -7,18 +7,18 @@ import java.util.LinkedList;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.sap.sailing.cache.aop.Collection_Monitor;
-import com.sap.sailing.cache.common.CacheKey;
-import com.sap.sailing.cache.common.CacheValueStatus;
-import com.sap.sailing.cache.common.CachedMethodSignature;
-import com.sap.sailing.cache.common.DependencyThreadLocal;
-import com.sap.sailing.cache.common.FieldID;
-import com.sap.sailing.cache.impl.InstanceFieldID;
-import com.sap.sailing.cache.test.scaffolding.Exposer;
-import com.sap.sailing.cache.test.scaffolding.MockAbstractCacheKey;
-import com.sap.sailing.cache.test.scaffolding.MockAbstractCacheValueContainer;
-import com.sap.sailing.cache.test.scaffolding.MockMethods;
-import com.sap.sailing.cache.test.scaffolding.MockMonitoredCollection;
+import com.rk.aspectCache.aop.Collection_Monitor;
+import com.rk.aspectCache.common.CacheKey;
+import com.rk.aspectCache.common.CacheValueStatus;
+import com.rk.aspectCache.common.CachedMethodSignature;
+import com.rk.aspectCache.common.DependencyThreadLocal;
+import com.rk.aspectCache.common.FieldID;
+import com.rk.aspectCache.impl.InstanceFieldID;
+import com.rk.aspectCache.test.scaffolding.Exposer;
+import com.rk.aspectCache.test.scaffolding.MockAbstractCacheKey;
+import com.rk.aspectCache.test.scaffolding.MockAbstractCacheValueContainer;
+import com.rk.aspectCache.test.scaffolding.MockMethods;
+import com.rk.aspectCache.test.scaffolding.MockMonitoredCollection;
 
 public class AbstractCacheValueContainerTest {
 	

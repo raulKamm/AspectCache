@@ -1,13 +1,13 @@
-package com.sap.sailing.cache.common;
+package com.rk.aspectCache.common;
 
 import java.util.Vector;
 
-import com.sap.sailing.cache.common.CacheKey;
+import com.rk.aspectCache.common.CacheKey;
 
 /**
  * Provides static access to the current dependencies, that is, the cache elements - represented by their associated CacheKeys - being calculated by the current thread.
  * 
- * @author Raul Bertone (D059912)
+ * @author Raul Bertone (raul.bertone@emptyingthebuffer.com)
  */
 
 public class DependencyThreadLocal {

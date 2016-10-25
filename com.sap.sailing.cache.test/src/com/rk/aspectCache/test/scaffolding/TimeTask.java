@@ -1,10 +1,10 @@
-package com.sap.sailing.cache.test.scaffolding;
+package com.rk.aspectCache.test.scaffolding;
 
 import java.lang.reflect.Method;
 
-import com.sap.sailing.cache.common.CacheKey;
-import com.sap.sailing.cache.impl.RecalculationTask;
-import com.sap.sailing.cache.test.RecalculatorTest;
+import com.rk.aspectCache.common.CacheKey;
+import com.rk.aspectCache.impl.RecalculationTask;
+import com.rk.aspectCache.test.RecalculatorTest;
 
 public class TimeTask extends RecalculationTask implements Runnable {
 

@@ -1,4 +1,4 @@
-package com.sap.sailing.cache.impl;
+package com.rk.aspectCache.impl;
 
 import java.util.concurrent.ThreadFactory;
 
@@ -7,7 +7,7 @@ import java.util.concurrent.ThreadFactory;
  * The whole purpose of this is to name them so they can be recognized as belonging to a Recalculator (useful for example to prevent them waiting 
  * needlessly when querying the cache and finding a CALCULATING / RECALCULATING state).
  * 
- * @author Raul Bertone (D059912)
+ * @author Raul Bertone (raul.bertone@emptyingthebuffer.com)
  */
 
 public class RecalculatorThreadFactory implements ThreadFactory {

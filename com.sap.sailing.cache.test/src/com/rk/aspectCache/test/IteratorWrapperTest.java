@@ -1,4 +1,4 @@
-package com.sap.sailing.cache.test;
+package com.rk.aspectCache.test;
 
 import static org.junit.Assert.*;
 

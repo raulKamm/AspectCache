@@ -1,4 +1,4 @@
-package com.sap.sailing.cache.impl;
+package com.rk.aspectCache.impl;
 
 import java.lang.management.ManagementFactory;
 import java.lang.ref.ReferenceQueue;
@@ -10,19 +10,19 @@ import java.util.concurrent.atomic.AtomicLong;
 import javax.management.MBeanServer;
 import javax.management.ObjectName;
 
-import com.sap.sailing.cache.aop.Collection_Monitor;
-import com.sap.sailing.cache.common.AbstractCacheValueContainer;
-import com.sap.sailing.cache.common.Cache;
-import com.sap.sailing.cache.common.CacheKey;
-import com.sap.sailing.cache.common.CacheValueContainer;
-import com.sap.sailing.cache.common.CacheValueStatus;
-import com.sap.sailing.cache.common.FieldID;
+import com.rk.aspectCache.aop.Collection_Monitor;
+import com.rk.aspectCache.common.AbstractCacheValueContainer;
+import com.rk.aspectCache.common.Cache;
+import com.rk.aspectCache.common.CacheKey;
+import com.rk.aspectCache.common.CacheValueContainer;
+import com.rk.aspectCache.common.CacheValueStatus;
+import com.rk.aspectCache.common.FieldID;
 
 /**
  * This implementation of the {@link Cache} interface uses the Singleton pattern to provide access to (the unique instance of) the cache data structure. <br>
  * It is based on {@link ConcurrentHashMap}s and therefore hands off to them most of the concurrency management.
  * 
- * @author Raul Bertone (D059912)
+ * @author Raul Bertone (raul.bertone@emptyingthebuffer.com)
  */
 
 public class CacheImpl implements Cache{
@@ -56,7 +56,7 @@ public class CacheImpl implements Cache{
 	
 	private static void registerMBean() throws Exception {
 		MBeanServer mbs = ManagementFactory.getPlatformMBeanServer(); 
-        ObjectName name = new ObjectName("com.sap.sailing.cache.impl:type=CacheMonitor");
+        ObjectName name = new ObjectName("com.rk.aspectCache.impl:type=CacheMonitor");
         CacheMonitor mbean = new CacheMonitor(); 
 		mbs.registerMBean(mbean, name);
 	}
@@ -315,7 +315,7 @@ public class CacheImpl implements Cache{
 	/**
 	 * This implementation assumes that the {@link CacheKey} it is associated with is immutable or the arguments it is built from are.
 	 * 
-	 * @author Raul Bertone (D059912)
+	 * @author Raul Bertone (raul.bertone@emptyingthebuffer.com)
 	 */
 	private class CacheValueContainerImmutable extends AbstractCacheValueContainer{
 
@@ -447,7 +447,7 @@ public class CacheImpl implements Cache{
 	 * This implementation assumes that it must recalculate itself automatically when it is invalidated. <br>
 	 * The @Cached method calculating this values should not be declared "stable". <br>
 	 * 
-	 * @author Raul Bertone (D059912)
+	 * @author Raul Bertone (raul.bertone@emptyingthebuffer.com)
 	 */
 	private class CacheValueContainerAutoRecalc extends AbstractCacheValueContainer {
 

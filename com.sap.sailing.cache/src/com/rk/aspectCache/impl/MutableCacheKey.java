@@ -1,15 +1,15 @@
-package com.sap.sailing.cache.impl;
+package com.rk.aspectCache.impl;
 
 import java.util.Arrays;
 
-import com.sap.sailing.cache.common.AbstractCacheKey;
-import com.sap.sailing.cache.common.CachedMethodSignature;
+import com.rk.aspectCache.common.AbstractCacheKey;
+import com.rk.aspectCache.common.CachedMethodSignature;
 
 /**
  * This implementation is mutable, in the sense that the field inputParameters references object that can be modified during the lifetime of this key.
  * Therefore, it should only be used when the arguments of the @Cached method are immutable.  Behavior when the arguments are modified is undefined.
  * 
- * @author Raul Bertone (D059912)
+ * @author Raul Bertone (raul.bertone@emptyingthebuffer.com)
  */
 
 public class MutableCacheKey extends AbstractCacheKey {

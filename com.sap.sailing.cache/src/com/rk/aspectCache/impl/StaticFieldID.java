@@ -1,6 +1,6 @@
-package com.sap.sailing.cache.impl;
+package com.rk.aspectCache.impl;
 
-import com.sap.sailing.cache.common.AbstractFieldID;
+import com.rk.aspectCache.common.AbstractFieldID;
 
 public class StaticFieldID extends AbstractFieldID{
 

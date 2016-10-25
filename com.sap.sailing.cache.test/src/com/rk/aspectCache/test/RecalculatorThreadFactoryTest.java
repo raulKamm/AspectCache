@@ -1,4 +1,4 @@
-package com.sap.sailing.cache.test;
+package com.rk.aspectCache.test;
 
 import static org.junit.Assert.*;
 
@@ -6,7 +6,7 @@ import java.util.concurrent.ThreadFactory;
 
 import org.junit.Test;
 
-import com.sap.sailing.cache.impl.RecalculatorThreadFactory;
+import com.rk.aspectCache.impl.RecalculatorThreadFactory;
 
 public class RecalculatorThreadFactoryTest {
 

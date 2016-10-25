@@ -1,15 +1,15 @@
-package com.sap.sailing.cache.impl;
+package com.rk.aspectCache.impl;
 
 import java.util.Iterator;
 
-import com.sap.sailing.cache.aop.Collection_Monitor;
+import com.rk.aspectCache.aop.Collection_Monitor;
 
 /**
  * This wrapper explicitly maintains trace of the current state of its wrapped Iterator (cursor's position). <br>
  * Whenever the underlying Collection is accessed or modified through the wrapped Iterator, this wrapper informs the Collection_Monitor aspect monitoring
  * the underlying Collection so that dependencies and invalidations on the Collection are properly handled even if generated indirectly.
  * 
- * @author Raul Bertone (D059912)
+ * @author Raul Bertone (raul.bertone@emptyingthebuffer.com)
  *
  * @param <E> The generic type of the wrapped Iterator
  */

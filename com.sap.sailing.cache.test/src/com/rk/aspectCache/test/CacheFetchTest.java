@@ -1,11 +1,11 @@
-package com.sap.sailing.cache.test;
+package com.rk.aspectCache.test;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import com.sap.sailing.cache.impl.CacheFetch;
-import com.sap.sailing.cache.test.scaffolding.CacheFetchConstructor;
+import com.rk.aspectCache.impl.CacheFetch;
+import com.rk.aspectCache.test.scaffolding.CacheFetchConstructor;
 
 public class CacheFetchTest {
 

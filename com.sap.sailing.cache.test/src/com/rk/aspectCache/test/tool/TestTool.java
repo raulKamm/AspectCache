@@ -1,4 +1,4 @@
-package com.sap.sailing.cache.test.tool;
+package com.rk.aspectCache.test.tool;
 
 import java.lang.management.ManagementFactory;
 import java.util.HashMap;
@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicLong;
 import javax.management.MBeanServer;
 import javax.management.ObjectName;
 
-import com.sap.sailing.cache.common.IgnoreField;
+import com.rk.aspectCache.common.IgnoreField;
 
 /**
  * An application for testing Autocache. 
@@ -65,7 +65,7 @@ public class TestTool {
 
 	private static void registerMBean() throws Exception {
 		MBeanServer mbs = ManagementFactory.getPlatformMBeanServer(); 
-        ObjectName name = new ObjectName("com.sap.sailing.cache.test.tool:type=CacheTest");
+        ObjectName name = new ObjectName("com.rk.aspectCache.test.tool:type=CacheTest");
         TestToolManagement mbean = new TestToolManagement(); 
 		mbs.registerMBean(mbean, name);
 	}

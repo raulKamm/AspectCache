@@ -1,17 +1,17 @@
-package com.sap.sailing.cache.test;
+package com.rk.aspectCache.test;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import com.sap.sailing.cache.impl.StaticFieldID;
+import com.rk.aspectCache.impl.StaticFieldID;
 
 public class StaticFieldIDTest {
 
 	private String field1 = "First";
 	private String field2 = "Second";
-	private String class1 = "com.sap.sailig.package.class1";
-	private String class2 = "com.sap.sailig.package.class2";
+	private String class1 = "com.rk.package.class1";
+	private String class2 = "com.rk.package.class2";
 	
 	@Test
 	public void sameClassSameField() {

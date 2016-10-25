@@ -1,17 +1,17 @@
-package com.sap.sailing.cache.aop;
+package com.rk.aspectCache.aop;
 
 import org.aspectj.lang.annotation.SuppressAjWarnings;
 
-import com.sap.sailing.cache.common.CacheKey;
-import com.sap.sailing.cache.common.DependencyThreadLocal;
-import com.sap.sailing.cache.common.MonitoredTask;
+import com.rk.aspectCache.common.CacheKey;
+import com.rk.aspectCache.common.DependencyThreadLocal;
+import com.rk.aspectCache.common.MonitoredTask;
 
 /**
  * This aspect manages context passing when Executors or children Threads are used. <br>
  * When a Runnable (including Thread) or Callable that implements the MonitoredTask interface is instantiated, it will implicitly implement
  * the ContextPassing interface: this aspect will call methods on that interface to copy/paste the context (the CacheKey currently under calculation in the parent thread).
  * 
- * @author Raul Bertone (D059912)
+ * @author Raul Bertone (raul.bertone@emptyingthebuffer.com)
  */
 @SuppressAjWarnings
 public aspect Context_Passing {

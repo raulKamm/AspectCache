@@ -1,10 +1,10 @@
-package com.sap.sailing.cache.test.tool;
+package com.rk.aspectCache.test.tool;
 
 import java.math.BigInteger;
 
-import com.sap.sailing.cache.common.Cached;
-import com.sap.sailing.cache.common.FieldMonitoringStrategy;
-import com.sap.sailing.cache.common.IgnoreField;
+import com.rk.aspectCache.common.Cached;
+import com.rk.aspectCache.common.FieldMonitoringStrategy;
+import com.rk.aspectCache.common.IgnoreField;
 
 public class PrimeFactors {
 	

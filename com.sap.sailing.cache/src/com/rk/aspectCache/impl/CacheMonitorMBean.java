@@ -1,4 +1,4 @@
-package com.sap.sailing.cache.impl;
+package com.rk.aspectCache.impl;
 
 /**
  * This Mbean exposes Autocache's runtime statistics. 

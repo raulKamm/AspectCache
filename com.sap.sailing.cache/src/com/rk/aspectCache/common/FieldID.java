@@ -1,9 +1,9 @@
-package com.sap.sailing.cache.common;
+package com.rk.aspectCache.common;
 
 /**
  * Identifies a specific class/instance field.
  *  
- * @author Raul Bertone (D059912)
+ * @author Raul Bertone (raul.bertone@emptyingthebuffer.com)
  */
 
 public interface FieldID {

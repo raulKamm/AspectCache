@@ -1,4 +1,4 @@
-package com.sap.sailing.cache.aop;
+package com.rk.aspectCache.aop;
 
 import java.util.Collections;
 import java.util.HashSet;
@@ -13,16 +13,16 @@ import java.util.concurrent.ConcurrentSkipListMap;
 
 import org.aspectj.lang.annotation.SuppressAjWarnings;
 
-import com.sap.sailing.cache.common.CacheKey;
-import com.sap.sailing.cache.common.DependencyThreadLocal;
-import com.sap.sailing.cache.impl.CacheImpl;
-import com.sap.sailing.cache.impl.IteratorWrapper;
-import com.sap.sailing.cache.impl.ListIteratorWrapper;
+import com.rk.aspectCache.common.CacheKey;
+import com.rk.aspectCache.common.DependencyThreadLocal;
+import com.rk.aspectCache.impl.CacheImpl;
+import com.rk.aspectCache.impl.IteratorWrapper;
+import com.rk.aspectCache.impl.ListIteratorWrapper;
 
 /**
  * Monitors calls to objects implementing the List interface.
  *  
- * @author Raul Bertone (D059912)
+ * @author Raul Bertone (raul.bertone@emptyingthebuffer.com)
  */
 
 @SuppressWarnings("rawtypes")

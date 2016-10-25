@@ -1,4 +1,4 @@
-package com.sap.sailing.cache.test.tool;
+package com.rk.aspectCache.test.tool;
 
 /**
  * This enum represent the command line arguments that can be passed to TestTool

@@ -1,21 +1,21 @@
-package com.sap.sailing.cache.aop;
+package com.rk.aspectCache.aop;
 
 import java.lang.ref.WeakReference;
 
 import org.aspectj.lang.annotation.SuppressAjWarnings;
 
-import com.sap.sailing.cache.common.CacheKey;
-import com.sap.sailing.cache.common.Cached;
-import com.sap.sailing.cache.common.MonitoredCollection;
-import com.sap.sailing.cache.common.MonitoredTask;
-import com.sap.sailing.cache.common.MonitoringParameters;
-import com.sap.sailing.cache.impl.CacheImpl;
+import com.rk.aspectCache.common.CacheKey;
+import com.rk.aspectCache.common.Cached;
+import com.rk.aspectCache.common.MonitoredCollection;
+import com.rk.aspectCache.common.MonitoredTask;
+import com.rk.aspectCache.common.MonitoringParameters;
+import com.rk.aspectCache.impl.CacheImpl;
 
 /**
  * Root of the Java Collection Framework monitoring aspects hierarchy. <br>
  * It is instantiated pertarget, so that one instance will exist for each MonitoredCollection instance.
  * 
- * @author Raul Bertone (D059912)
+ * @author Raul Bertone (raul.bertone@emptyingthebuffer.com)
  */
 @SuppressAjWarnings
 public abstract aspect Collection_Monitor pertarget(call(* *.*(..)) /*&& target(MonitoredCollection)*/){
@@ -23,7 +23,7 @@ public abstract aspect Collection_Monitor pertarget(call(* *.*(..)) /*&& target(
 	private boolean register = true;
 	
 	pointcut cachedMethod(): execution(@Cached * *.*(..)) || within(MonitoredTask+);
-	pointcut excludeFramework(): !within(com.sap.sailing.cache.impl.*) && !within(com.sap.sailing.cache.aop.*) && !within(com.sap.sailing.cache.common.*);
+	pointcut excludeFramework(): !within(com.rk.aspectCache.impl.*) && !within(com.rk.aspectCache.aop.*) && !within(com.rk.aspectCache.common.*);
 	
 	/**
 	 * Prevents calls from Iterators that happen outside the control-flow of a @Cached method to register a dependency when a List-element is accessed.

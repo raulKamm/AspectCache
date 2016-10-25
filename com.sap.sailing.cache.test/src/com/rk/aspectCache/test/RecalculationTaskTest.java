@@ -1,4 +1,4 @@
-package com.sap.sailing.cache.test;
+package com.rk.aspectCache.test;
 
 import static org.junit.Assert.*;
 
@@ -6,13 +6,13 @@ import java.lang.reflect.Method;
 
 import org.junit.Test;
 
-import com.sap.sailing.cache.common.CachedMethodSignature;
-import com.sap.sailing.cache.common.DependencyThreadLocal;
-import com.sap.sailing.cache.impl.IdentityCacheKey;
-import com.sap.sailing.cache.impl.RecalculationTask;
-import com.sap.sailing.cache.test.scaffolding.Exposer;
-import com.sap.sailing.cache.test.scaffolding.GetterSetter;
-import com.sap.sailing.cache.test.scaffolding.MockMethods;
+import com.rk.aspectCache.common.CachedMethodSignature;
+import com.rk.aspectCache.common.DependencyThreadLocal;
+import com.rk.aspectCache.impl.IdentityCacheKey;
+import com.rk.aspectCache.impl.RecalculationTask;
+import com.rk.aspectCache.test.scaffolding.Exposer;
+import com.rk.aspectCache.test.scaffolding.GetterSetter;
+import com.rk.aspectCache.test.scaffolding.MockMethods;
 
 public class RecalculationTaskTest {
 

@@ -1,15 +1,15 @@
-package com.sap.sailing.cache.impl;
+package com.rk.aspectCache.impl;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-import com.sap.sailing.cache.common.CacheKey;
-import com.sap.sailing.cache.common.DependencyThreadLocal;
+import com.rk.aspectCache.common.CacheKey;
+import com.rk.aspectCache.common.DependencyThreadLocal;
 
 /**
  * When run, this class will invoke a @Cached method with the same arguments of a previous invocation (which result has been already cached and later invalidated).
  * 
- * @author Raul Bertone (D059912)
+ * @author Raul Bertone (raul.bertone@emptyingthebuffer.com)
  */
 public class RecalculationTask implements Runnable {
 

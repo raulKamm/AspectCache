@@ -1,13 +1,13 @@
-package com.sap.sailing.cache.impl;
+package com.rk.aspectCache.impl;
 
-import com.sap.sailing.cache.common.AbstractCacheKey;
-import com.sap.sailing.cache.common.CachedMethodSignature;
+import com.rk.aspectCache.common.AbstractCacheKey;
+import com.rk.aspectCache.common.CachedMethodSignature;
 
 /**
  * This implementation is immutable and uses the serialization of the @Cached method's arguments to
  * obtain a unique identity for the method invocation.
  * 
- * @author Raul Bertone (D059912)
+ * @author Raul Bertone (raul.bertone@emptyingthebuffer.com)
  */
 
 public class ImmutableCacheKey extends AbstractCacheKey {

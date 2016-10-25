@@ -1,15 +1,15 @@
-package com.sap.sailing.cache.test;
+package com.rk.aspectCache.test;
 
 import static org.junit.Assert.*;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.sap.sailing.cache.common.CacheKey;
-import com.sap.sailing.cache.common.CachedMethodSignature;
-import com.sap.sailing.cache.impl.MutableCacheKey;
-import com.sap.sailing.cache.test.scaffolding.Exposer;
-import com.sap.sailing.cache.test.scaffolding.MockMethods;
+import com.rk.aspectCache.common.CacheKey;
+import com.rk.aspectCache.common.CachedMethodSignature;
+import com.rk.aspectCache.impl.MutableCacheKey;
+import com.rk.aspectCache.test.scaffolding.Exposer;
+import com.rk.aspectCache.test.scaffolding.MockMethods;
 
 public class MutableCacheKeyTest {
 

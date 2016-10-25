@@ -1,11 +1,11 @@
-package com.sap.sailing.cache.common;
+package com.rk.aspectCache.common;
 
 import java.lang.ref.Reference;
 import java.lang.ref.ReferenceQueue;
 import java.lang.ref.WeakReference;
 import java.util.HashSet;
 
-import com.sap.sailing.cache.aop.Collection_Monitor;
+import com.rk.aspectCache.aop.Collection_Monitor;
 
 public class MonitoringParameters {
 

@@ -1,6 +1,6 @@
-package com.sap.sailing.cache.test.scaffolding;
+package com.rk.aspectCache.test.scaffolding;
 
-import com.sap.sailing.cache.impl.CacheFetch;
+import com.rk.aspectCache.impl.CacheFetch;
 
 public class CacheFetchConstructor extends CacheFetch {
 

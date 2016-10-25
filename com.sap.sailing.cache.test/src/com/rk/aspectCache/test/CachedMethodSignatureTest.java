@@ -1,17 +1,17 @@
-package com.sap.sailing.cache.test;
+package com.rk.aspectCache.test;
 
 import static org.junit.Assert.*;
 
 import org.aspectj.lang.reflect.MethodSignature;
 import org.junit.Test;
 
-import com.sap.sailing.cache.common.CachedMethodSignature;
-import com.sap.sailing.cache.test.scaffolding.Exposer;
-import com.sap.sailing.cache.test.scaffolding.MockMethods;
+import com.rk.aspectCache.common.CachedMethodSignature;
+import com.rk.aspectCache.test.scaffolding.Exposer;
+import com.rk.aspectCache.test.scaffolding.MockMethods;
 
 public class CachedMethodSignatureTest {
 	
-	private static final String declaringTypeName = "com.sap.sailing.cache.test.scaffolding.MockMethods";
+	private static final String declaringTypeName = "com.rk.aspectCache.test.scaffolding.MockMethods";
 	
 	@Test
 	public void testInstanceOnePrimitiveParameter() {
