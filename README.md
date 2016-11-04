@@ -4,7 +4,7 @@ AspectCache is a Java framework for application-level caching with automatic inv
 
 The caching solutions available today for application-generated objects are difficult to use
 as they offer little help for the management of stored entries: the duty of keeping them up to
-date is left to application, which is a common cause of errors and makes code maintenance
+date is left to the application, which is a common cause of errors and makes code maintenance
 difficult. 
 
 AspectCache exploits aspect programming techniques and code weaving to cache selected methods and
